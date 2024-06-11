@@ -1,0 +1,65 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+font-family: 'Circular';
+src: url('/fonts/CIRCULARSTDBLACK.OTF') format('opentype');
+font-weight: 900;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Circular';
+src: url('/fonts/CIRCULARSTDBOLD.OTF') format('opentype');
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Circular';
+src: url('/fonts/CIRCULARSTDMEDIUM.OTF') format('opentype');
+font-weight: 500;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Circular';
+src: url('/fonts/CIRCULARSTDBOOK.OTF') format('opentype');
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Circular';
+src: url('/fonts/CIRCULARSTDLIGHT.OTF') format('opentype');
+font-weight: 300;
+font-style: normal;
+}
+@layer base {
+      
+    h1 {
+        @apply dark:text-cream font-circular text-black text-5xl 
+    }
+    h2 {
+        @apply dark:text-cream font-circular text-black text-2xl 
+    }
+    h3 {
+        @apply dark:text-cream font-circular text-black text-xl 
+    }
+    h4 {
+        @apply dark:text-cream font-circular text-black text-base 
+    }
+}
+
+@layer components {
+    .section-container {
+        @apply flex flex-row justify-between bg-gray/15 p-5 rounded-2xl border-[1px] border-gray items-center
+    }
+    .primary-btn {
+        @apply flex justify-center bg-cream p-5 rounded-2xl 
+    }
+}
+
