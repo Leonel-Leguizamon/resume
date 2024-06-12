@@ -7,7 +7,7 @@ import AppMobile from './Mobile/AppMobile.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {
-      isMobile ? 
+      true ? 
         <AppMobile/> : null
     }
   </React.StrictMode>,

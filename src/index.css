@@ -41,16 +41,16 @@ font-style: normal;
 @layer base {
       
     h1 {
-        @apply dark:text-cream font-circular text-black text-5xl 
+        @apply dark:text-cream font-circular text-5xl 
     }
     h2 {
-        @apply dark:text-cream font-circular text-black text-2xl 
+        @apply dark:text-cream font-circular text-2xl 
     }
     h3 {
-        @apply dark:text-cream font-circular text-black text-xl 
+        @apply dark:text-cream font-circular text-xl 
     }
     h4 {
-        @apply dark:text-cream font-circular text-black text-base 
+        @apply dark:text-cream font-circular text-base 
     }
 }
 

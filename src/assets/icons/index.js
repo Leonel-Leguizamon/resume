@@ -12,6 +12,12 @@ import downarrow from './downarrow.svg'
 import whatsapp from './whatsapp.svg'
 import linkedin from './linkedin.svg'
 import github from './github.svg'
+import cplusplus from './cplusplus.svg'
+import java from './java.svg'
+import javascript from './javascript.svg'
+import mongo from './mongo.svg'
+import postgres from './postgres.svg'
+import python from './python.svg'
 
 export {
     menuicon,
@@ -27,5 +33,11 @@ export {
     downarrow,
     whatsapp,
     linkedin,
-    github
+    github,
+    cplusplus,
+    java,
+    javascript,
+    mongo,
+    postgres,
+    python
 }

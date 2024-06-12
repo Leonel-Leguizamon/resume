@@ -4,7 +4,7 @@ import { isMobile } from 'react-device-detect';
 const App = () => {
   return (
     <div className='dark:bg-black h-dvh px-4 '>
-      {isMobile ? 
+      {true ? 
         (
           <div className='flex flex-col py-2 gap-2'>
             <div className='section-container'>
