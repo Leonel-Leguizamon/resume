@@ -1,22 +1,16 @@
 import React from 'react'
-import Header from '../Components/Header'
-import HeroMobile from './HeroMobile'
-import ExperienceMobile from './ExperienceMobile'
-import AboutMe from './AboutMe'
-import TechStack from './TechStack'
-import FooterMobile from './FooterMobile'
-
+import { Route, Routes } from "react-router-dom";
+import LandingPage from './LandingPage'
+import ProjectsMobile from './ProjectsMobile'
+import ProjectPageMobile from './ProjectPageMobile';
 const AppMobile = () => {
   return (
-    <div className='flex flex-col h-full bg-black w-full'>
-        <Header />
-        <HeroMobile/>
-        <ExperienceMobile/>
-        <AboutMe/>
-        <TechStack/>
-        <FooterMobile/>
-    </div>
-  )
+    <Routes>
+      <Route path="/resume" element={<LandingPage />}/>
+      <Route path="/resume/projects" element={<ProjectsMobile />}/>
+      <Route path="/resume/projects/:projectName" element={<ProjectPageMobile />}/>
+    </Routes>
+  );
 }
 
 export default AppMobile

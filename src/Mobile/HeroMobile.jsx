@@ -1,17 +1,8 @@
 import React from 'react'
-import { Icons, Imgs, cv } from '../assets'
-
+import { Icons, Imgs, Documents } from '../assets'
+import { downloadFiles } from '../utils'
 const HeroMobile = () => {
 
-    const downloadCv = () => {
-        // Usar directamente la URL del archivo importado
-        const element = document.createElement("a");
-        element.href = cv;
-        element.download = "Leonel-Leguizamon-CV.pdf";
-        document.body.appendChild(element); // Requerido para que funcione en Firefox
-        element.click();
-        document.body.removeChild(element);
-    };
     return (
     <div className='flex flex-col px-5 py-8 pt-20'>
         {/* Greeting */}
@@ -48,12 +39,12 @@ const HeroMobile = () => {
                 <h3 className='font-bold text-black w-full'>Get in touch</h3>
             </button>
             <button 
-            onClick={downloadCv}
-            className='bg-gray/15 p-5 rounded-2xl flex flex-row justify-between items-center'>
+            onClick={()=>{downloadFiles([Documents.CV_Leonel_Leguizamon])}}
+            className='secondary-btn'>
                 <h3 className='font-light whitespace-nowrap'>Download CV</h3>
                 <img src={Icons.downloadicon}/>
             </button>
-            <button className='bg-gray/15 p-5 rounded-2xl flex flex-row justify-between items-center'>
+            <button className='secondary-btn'>
                 <h3 className='font-light whitespace-nowrap'>Download Certificates</h3>
                 <img src={Icons.downloadicon}/>
             </button>

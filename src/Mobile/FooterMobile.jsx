@@ -1,5 +1,6 @@
 import React from 'react'
 import { Icons } from '../assets'
+import { links } from '../assets/content'
 
 const FooterMobile = () => {
   return (
@@ -9,9 +10,15 @@ const FooterMobile = () => {
             <h3 className='font-light text-center'>If you are interested in my profile, don't hesitate to contact me</h3>
         </div>
         <div className='flex flex-row gap-3 pt-6 pb-24  w-full items-center justify-center '>
-            <img src={Icons.whatsapp}/>
-            <img src={Icons.linkedin}/>
-            <img src={Icons.github}/>
+            <a href={links.whatsapp} target="_blank" rel="noopener noreferrer">
+              <img src={Icons.whatsapp}/>
+            </a>
+            <a href={links.linkedin} target="_blank" rel="noopener noreferrer">
+              <img src={Icons.linkedin}/>
+            </a>
+            <a href={links.github.main} target="_blank" rel="noopener noreferrer">
+              <img src={Icons.github}/>
+            </a>
         </div>
     </>
   )

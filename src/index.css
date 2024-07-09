@@ -41,16 +41,16 @@ font-style: normal;
 @layer base {
       
     h1 {
-        @apply dark:text-cream font-circular text-5xl 
+        @apply dark:text-cream font-circular text-5xl tracking-normal
     }
     h2 {
-        @apply dark:text-cream font-circular text-2xl 
+        @apply dark:text-cream font-circular text-2xl tracking-normal
     }
     h3 {
-        @apply dark:text-cream font-circular text-xl 
+        @apply dark:text-cream font-circular text-xl tracking-wide
     }
     h4 {
-        @apply dark:text-cream font-circular text-base 
+        @apply dark:text-cream font-circular text-base tracking-wide
     }
 }
 
@@ -59,7 +59,10 @@ font-style: normal;
         @apply flex flex-row justify-between bg-gray/15 p-5 rounded-2xl border-[1px] border-gray items-center
     }
     .primary-btn {
-        @apply flex justify-center bg-cream p-5 rounded-2xl 
+        @apply flex justify-center bg-cream p-5 rounded-2xl hover:scale-[0.99] transition-all
+    }
+    .secondary-btn {
+        @apply bg-gray/15 p-5 rounded-2xl flex flex-row justify-between items-center hover:scale-[0.99] transition-all
     }
 }
 

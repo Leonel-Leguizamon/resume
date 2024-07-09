@@ -4,11 +4,28 @@ import App from './App.jsx'
 import './index.css'
 import { isMobile } from 'react-device-detect';
 import AppMobile from './Mobile/AppMobile.jsx';
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+
+function AppRouter (){
+  return (
+  <BrowserRouter>
     {
-      true ? 
-        <AppMobile/> : null
+      true ? <AppMobile/> : null
     }
-  </React.StrictMode>,
-)
+  </BrowserRouter>
+  )
+}
+
+{/* <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<App/>} />
+          <Route path="/rent/:city?/:dateIn?/:dateOut?/:type?" element={<Rentpage />} />
+          <Route path='/finalize' element={<FinalizeRental />} />
+          <Route path='/bookings' element={<Bookings />} />
+        </Routes>
+      </BrowserRouter> */}
+
+// Ensure the root is created only once
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<AppRouter />);
