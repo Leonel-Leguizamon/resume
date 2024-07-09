@@ -1,6 +1,7 @@
 import React from 'react'
 import { Icons, Imgs, Documents } from '../assets'
 import { downloadFiles } from '../utils'
+import { links } from '../assets/content'
 const HeroMobile = () => {
 
     return (
@@ -35,11 +36,11 @@ const HeroMobile = () => {
         </div>
         {/* CTA */}
         <div className='flex flex-col gap-2 py-4'>
-            <button className='primary-btn'>
+            <a className='primary-btn' href={links.whatsapp} target="_blank" rel="noopener noreferrer">
                 <h3 className='font-bold text-black w-full'>Get in touch</h3>
-            </button>
+            </a>
             <button 
-            onClick={()=>{downloadFiles([Documents.CV_Leonel_Leguizamon])}}
+            onClick={()=>downloadFiles([Documents.CV_Leonel_Leguizamon])}
             className='secondary-btn'>
                 <h3 className='font-light whitespace-nowrap'>Download CV</h3>
                 <img src={Icons.downloadicon}/>

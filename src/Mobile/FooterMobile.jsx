@@ -17,7 +17,7 @@ const FooterMobile = () => {
               <img src={Icons.linkedin}/>
             </a>
             <a href={links.github.main} target="_blank" rel="noopener noreferrer">
-              <img src={Icons.github}/>
+              <img src={Icons.technologies.github}/>
             </a>
         </div>
     </>

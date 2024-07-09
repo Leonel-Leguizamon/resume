@@ -1,6 +1,6 @@
 const downloadFiles = (files) => {
     files.forEach(file => {
-        const element = document.createElement("file");
+        const element = document.createElement("a");
         element.href = file;
         const fileName = file.substring(file.lastIndexOf('/') + 1);
         element.download = fileName;

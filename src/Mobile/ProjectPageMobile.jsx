@@ -2,6 +2,7 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 import Header from '../Components/Header';
 import { Icons } from '../assets';
+import { downloadFiles } from '../utils';
 const ProjectPageMobile = () => {
     const locationParam = useLocation();
     const projectData = locationParam.state || {}
@@ -39,7 +40,7 @@ const ProjectPageMobile = () => {
                     </a>
                     {
                         projectData.links.docs.length > 0 ? 
-                        <button className='secondary-btn'>
+                        <button onClick={()=>downloadFiles(projectData.links.docs)} className='secondary-btn'>
                             <h3>📄 Download the docs</h3>
                             <img src={Icons.downloadicon}/>
                         </button> : null
