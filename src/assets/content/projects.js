@@ -62,7 +62,7 @@ const projectsList = [
             "Plan and develop the CNN", 
             "Preprocessing the datasets",
             "Configure some neural networks",
-            "Analyze the resu;ts and adjust parameters"
+            "Analyze the results and adjust parameters"
         ],
         doneAt: "Done at college", 
         techIcons: [
@@ -91,7 +91,7 @@ const projectsList = [
             technologies.github_gray
         ], 
         mainImage: projectImages.portfolio_main, 
-        stackedImages: projectImages.cnn_stacked,
+        stackedImages: projectImages.portfolio_stacked,
         links: { 
             repo: { title: "🔗 Link to GitHub repository ", link: "https://github.com/Leonel-Leguizamon/resume"},
             docs: [], 

@@ -2,6 +2,7 @@ import React from 'react'
 import { projectImages } from '../assets/imgs'
 import { Icons } from '../assets'
 import { useNavigate } from 'react-router-dom'
+
 const ProjectCard = ({projectData}) => {
     const navigate = useNavigate()
     const handleNavigate = () => {
