@@ -55,7 +55,17 @@ const techStack = {
     ]
 }
 
+const workExperience = [
+    {
+        title: "Ayudante de Cátedra",
+        subtitle: "POO  | FCEx UNICEN | 2024",
+        overview: "During the first quarter of 2024, I was an assistant in object-oriented programming. My main tasks were:",
+        mainTasks: ["Assisting students", "Solving practical exercises", "Correcting exams"],
+        learned: "This experience helped me improve my interpersonal skills, communication, patience, empathy and perfectionate knowledge about OOP."
+    }
+]
 
 
 
-export {aboutMe, levelRef, techStack, links, projectsList}
+
+export {aboutMe, levelRef, techStack, links, projectsList, workExperience}

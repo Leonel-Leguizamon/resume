@@ -1,4 +1,5 @@
 import menuicon from './menu.svg'
+import settings from './settings.svg'
 import graduateicon from './graduate.svg'
 import downloadicon from './download.svg'
 import rightarrow from './rightarrow.svg'
@@ -29,5 +30,6 @@ export {
     downarrow,
     whatsapp,
     linkedin,
-    technologies
+    technologies,
+    settings
 }

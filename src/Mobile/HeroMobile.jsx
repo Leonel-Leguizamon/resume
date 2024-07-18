@@ -62,7 +62,9 @@ const HeroMobile = () => {
                 <h3 className='font-light whitespace-nowrap'>Download CV</h3>
                 <img src={Icons.downloadicon}/>
             </button>
-            <button className='secondary-btn'>
+            <button 
+            onClick={()=>downloadFiles([Documents.avance_de_carrera])}
+            className='secondary-btn'>
                 <h3 className='font-light whitespace-nowrap'>Download Certificates</h3>
                 <img src={Icons.downloadicon}/>
             </button>
